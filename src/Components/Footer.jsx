@@ -6,7 +6,6 @@ const Footer = () => {
     const {
         register,
         handleSubmit,
-        formState: {errors},
     } = useForm({})
 
     return ( <div className=" footer flex justify-between bg-gray-600 p-5 text-white">
@@ -49,11 +48,14 @@ const Footer = () => {
             <h2>Newsletter</h2>
             {/* <p>Sign up for the latest news and updates</p> */}
 
-            <label>Sign up for the latest news and updates</label>
-        <input type="email" name='email' placeholder='Your email' {...register('email', {
-             required: true, 
-             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-        })}/>
+            <form onSubmit={handleSubmit()}>
+                <label>Sign up for the latest news and updates</label>
+                <input type="email" name='email' placeholder='Your email' {...register('email', {
+                    required: true, 
+                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                })}/>
+            </form>
+            
 
         </div>
     </div> );
