@@ -1,18 +1,19 @@
 import enairaLogo from '../assets/enairalogo.jpg'
+import { Link } from 'react-router-dom';
 const Nav = () => {
     return ( <nav className="flex justify-between p-5 items-center">
         <div>
             <img src={enairaLogo} alt="enaira logo" />
         </div>
 
-        <div className="flex justify-between align-middle items-center ml-20 w-3/5 pr-12">
+        <div className="flex justify-between align-middle items-center ml-20 w-3/5 mr-12">
             <div>
                 <ul className="flex items-center">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>eNaira wallet</li>
-                    <li>Blogs News</li>
-                    <li>Help</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='#about'>About eNaira</Link></li>
+                    <li><Link to='/'>eNaira Wallet</Link></li>
+                    <li><Link to='#features'>Key Features</Link></li>
+                    <li><Link to='/'>Help</Link></li>
                 </ul>
             </div>
             <div className='flex gap-10'>
