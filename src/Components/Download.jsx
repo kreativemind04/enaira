@@ -1,5 +1,4 @@
 import iphone from '../assets/iphone13.PNG'
-import { Link } from 'react-router-dom';
 const Download = () => {
     return ( <div className=" download flex justify-center border border-black">
         <div className="p-20 text-sm">
