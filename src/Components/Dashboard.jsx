@@ -15,7 +15,6 @@ const Dashboard = () => {
                 
                 <div>
                 <p className='text-xl'>
-                    
                     {/* <CountUp start={0} end={card?.counter} duration={5} delay={1} /> */}
                     <h1>{card?.counter}</h1>
                 </p>
