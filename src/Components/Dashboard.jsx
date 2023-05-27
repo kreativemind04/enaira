@@ -1,4 +1,5 @@
-import CountUp from 'react-countup/'
+// This library is causing errors, find a substitute for it - you can use this https://use-count-up.vercel.app/
+// import CountUp from 'react-countup';
 const Dashboard = () => {
 
     const cards =  [
@@ -13,7 +14,11 @@ const Dashboard = () => {
                 <div className='pt-2 gap text-2xl'><i className={card.icon}></i></div>
                 
                 <div>
-                <p className='text-xl'><CountUp start={0} end={card?.counter} duration={5} delay={1} /></p>
+                <p className='text-xl'>
+                    
+                    {/* <CountUp start={0} end={card?.counter} duration={5} delay={1} /> */}
+                    <h1>{card?.counter}</h1>
+                </p>
                 <p>{card.Title}</p>
                 </div>
                
