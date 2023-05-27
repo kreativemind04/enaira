@@ -27,7 +27,6 @@ function App() {
     <Qr/>
     <Partnerships/>
     <Footer/>
-    <a>learn react</a> 
     </div>
   );
 }
