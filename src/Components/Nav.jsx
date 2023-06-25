@@ -50,9 +50,9 @@ const Nav = () => {
         <button className='md:hidden p-5 rounded-md outline-none text-lg' onClick={()=> setOpenNav(!openNav)}>
             {
                 openNav ? (
-                    <i class="fa fa-times"></i>
+                    <i className="fa fa-times"></i>
                 ): (
-                    <i class="fa fa-bars"></i>
+                    <i className="fa fa-bars"></i>
                 )
             }
         </button>

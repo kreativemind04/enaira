@@ -16,7 +16,8 @@ const Footer = () => {
             <div className='pt-10 flex justify-evenly text-xl'>
                 <i className='fa fa-facebook-official'></i>
                 <i className='fa fa-twitter'></i>
-                <i className='fa fa-instagram'></i>
+                <a href="https://twitter.com/BullnetE" target='blank'><i className='fa fa-twitter'></i></a>
+                <a href="https://www.instagram.com/enairabybullnet/" target='blank'><i className='fa fa-instagram'></i></a>
                 <i className='fa fa-envelope'></i>
 
             </div>

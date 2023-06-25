@@ -8,7 +8,7 @@ const Qr = () => {
                 <img src={code} alt="" />
             </div>
         </div>
-        <div className='h-96 w-1/4 pr-10'>
+        <div className='hidden md:visible h-96 w-1/4 pr-10'>
             <img src={phone} alt="" />
         </div>
     </div> );
