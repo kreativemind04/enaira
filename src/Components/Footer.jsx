@@ -8,7 +8,7 @@ const Footer = () => {
         handleSubmit,
     } = useForm({})
 
-    return ( <div className=" footer flex justify-between bg-gray-600 p-5 text-white">
+    return ( <div className=" footer flex flex-col md:flex-row justify-between bg-gray-600 p-5 text-white">
         <div>
             <div className='bg-white mt-10'>
                 <img src={logo} alt="" />
@@ -26,10 +26,10 @@ const Footer = () => {
         <div>
             <h2>Quick Links</h2>
             <ul className="">
-                    <li><Link to='/'>Home</Link></li>
+            <li><a href="#home">Home</a></li>
                     <li><Link to='#'>How it works</Link></li>
-                    <li><Link to='#'>FAQs</Link></li>
-                    <li><Link to='#about'>About Us</Link></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href='#about'>About Us</a></li>
                     <li><Link to='/'>Privacy Policy</Link></li>
                 </ul>
         </div>
@@ -49,9 +49,9 @@ const Footer = () => {
             <h2>Newsletter</h2>
             {/* <p>Sign up for the latest news and updates</p> */}
 
-            <form onSubmit={handleSubmit()}>
+            <form id='subscribe' onSubmit={handleSubmit()}>
                 <label>Sign up for the latest news and updates</label>
-                <input type="email" name='email' placeholder='Your email' {...register('email', {
+                <input className='border border-red-900 w-full' type="email" name='email' placeholder='Your email' {...register('email', {
                     required: true, 
                     pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                 })}/>

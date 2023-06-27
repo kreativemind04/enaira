@@ -27,7 +27,7 @@ const Home = () => {
     ]
 
    
-    return ( <section>
+    return ( <section id="home">
         <div className="about-e p-10" id="about">
             <h2 className="text-3xl border-b-2">About eNaira</h2>
             <p>eNaira is a Central Bank of Nigeria-issued digital currency that provides a unique form of money denominated in Naira. eNaira serves as both a medium of exchange and a store of value, offering better payment prospects in retail transactions when compared to cash payments. eNaira has an exclusive operational structure that is both remarkable and nothing like other forms of central bank money.</p>
