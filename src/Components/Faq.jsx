@@ -24,9 +24,9 @@ const Faq = () => {
             answer: 'No, it will circulate alongside cash. The eNaira will complement cash as a less costly, more efficient, generally accepted, safe, and trusted means of payment.',
         }
     ]
-    return ( <div className="flex justify-between p-20">
+    return ( <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 justify-between p-20" id="faq">
         <div>
-            <div className="w-2/4 text-center">
+            <div className="md:w-2/4 text-center">
                 <h2 className="font-bold m-2">Frequently Asked Questions (FAQ)</h2>
                 <p>We are here to guide you. Get answers to your most pressing questions about eNaira from this comprehensive FAQ section.</p>
             </div>

@@ -18,9 +18,10 @@ function App() {
     <Nav/>
     <Banner/>
     <Dashboard/>
-    <Routes >
+    {/* <Routes >
         <Route path="/" element={<Home/>} />
-      </Routes>
+      </Routes> */}
+    <Home/>
     <Agents/>
     <Download/>
     <Faq/>

@@ -13,6 +13,7 @@
     "react-hook-form": "^7.43.9",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "use-count-up": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

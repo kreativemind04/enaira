@@ -11,6 +11,8 @@ const Home = () => {
     ]
 
     const [selectedElementIndex, setSelectedElementIndex] = useState(null)
+    const [selectedElementId, setSelectedElementId] = useState(null)
+    
 
 
     const cardsB =  [
@@ -25,7 +27,7 @@ const Home = () => {
     ]
 
    
-    return ( <section>
+    return ( <section id="home">
         <div className="about-e p-10" id="about">
             <h2 className="text-3xl border-b-2">About eNaira</h2>
             <p>eNaira is a Central Bank of Nigeria-issued digital currency that provides a unique form of money denominated in Naira. eNaira serves as both a medium of exchange and a store of value, offering better payment prospects in retail transactions when compared to cash payments. eNaira has an exclusive operational structure that is both remarkable and nothing like other forms of central bank money.</p>
@@ -39,15 +41,15 @@ const Home = () => {
             </div>
 
             
-            <div className="features grid grid-cols-3 gap-5 p-20">
+            <div className="features grid p-10 md:grid-cols-3 gap-5 md:p-20">
                 {cards.map((card, index)=>(
-                <div key={index} style={{backgroundColor: index===selectedElementIndex? 'darkgreen' : 'white'}} onClick={
+                <div key={index} style={{backgroundColor: index===selectedElementIndex? 'darkgreen' : 'white', color: index===selectedElementIndex? 'white' : 'black'}} onClick={
                     () =>{
                         setSelectedElementIndex(index)
                     }
-                } className="border rounded-3xl shadow-md p-5 text-sm">
+                } className="border rounded-md md:rounded-3xl shadow-md p-5 text-sm">
                     <div className=" w-10 h-10 bg-teal-50 rounded-full flex justify-center pt-3">
-                    <i className={card.img}></i>   
+                    <i className={`${card.img} text-black`}></i>   
                     </div>
                     <h3 className="font-bold my-5">{card.Title}</h3>
                     <p>{card.body}</p> 
@@ -58,14 +60,14 @@ const Home = () => {
         <section className="text-center bg-teal-50 text-xl py-5">
             <h1>Why use eNaira</h1>
             <p className="text-sm">All the amazing benefits we offer our customers using eNaira</p>
-            <div className="grid grid-cols-4 gap-5 p-20">
+            <div className="grid md:grid-cols-4 gap-5 p-20">
                 {cardsB.map((cardb, id)=>(
-                    <div key={id} style={{backgroundColor: id===selectedElementIndex? 'darkgreen' : 'white'}} onClick={
+                    <div key={id} style={{backgroundColor: id===selectedElementId? 'darkgreen' : 'white', color: id===selectedElementId? 'white' : 'black'}} onClick={
                         () =>{
-                            setSelectedElementIndex(id)
+                            setSelectedElementId(id)
                         }
                     } className="border rounded p-5 bg-slate-50 text-sm">
-                        <div className="border w-10 h-10 bg-neutral-800 text-white rounded-full text-center pt-2">{cardb.id}</div>
+                        <div className="hidden md:visible border w-10 h-10 bg-neutral-800 text-white rounded-full text-center pt-2">{cardb.id}</div>
                         <h2 className="font-bold">{cardb.Title}</h2>
                         <p>{cardb.body}</p>
                     </div>
