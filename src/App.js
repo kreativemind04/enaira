@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import './App.css';
 import Banner from './Components/Banner';
 import Nav from './Components/Nav'
@@ -18,9 +17,6 @@ function App() {
     <Nav/>
     <Banner/>
     <Dashboard/>
-    {/* <Routes >
-        <Route path="/" element={<Home/>} />
-      </Routes> */}
     <Home/>
     <Agents/>
     <Download/>
