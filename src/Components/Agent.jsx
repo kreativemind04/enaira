@@ -15,7 +15,7 @@ const Agents = () => {
                     <p><i className="fa fa-check-square pr-2"></i>Create business for yourself without the stress of getting POS</p>
                     <p><i className="fa fa-check-square pr-2" ></i>Make transactions without hidden costs or charges</p>
                     <p><i className="fa fa-check-square pr-2" ></i>Make transactions without fear of dispensing error</p>
-                    <button className='border-2 border-gray-600 text-xs px-3 py-2 mt-40 my-6 md:my-0'>Click here to become an agent</button>
+                    <button className='border-2 border-gray-600 text-xs px-3 py-2 mt-40 my-6'>Click here to become an agent</button>
                 </div>
             </div>
         </div>
