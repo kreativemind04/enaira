@@ -20,7 +20,7 @@ const Nav = () => {
         
         {
             openNav ? (
-                <div className="flex flex-col md:hidden justify-between items-center w-full left-0 right-0 top-32 mr-12 absolute bg-white py-10">
+                <div className="flex flex-col lg:hidden justify-between items-center w-full left-0 right-0 top-32 mr-12 absolute bg-white py-10">
         <div>
                 <ul className="flex flex-col items-center">
                 <li><a href="#home">Home</a></li>
@@ -37,7 +37,7 @@ const Nav = () => {
             </div>
         </div>
             ) : (
-                <div className="hidden md:flex justify-between items-center ml-20 w-3/5 mr-12">
+                <div className="hidden lg:flex justify-between items-center ml-20 w-3/5 mr-12">
             <div>
                 <ul className="flex items-center gap-4">
                     <li><a href="#home">Home</a></li>
@@ -58,7 +58,7 @@ const Nav = () => {
 
         
         {/* Mobile Hamburger */}
-        <button className='md:hidden p-5 rounded-md outline-none text-lg' onClick={()=> setOpenNav(!openNav)}>
+        <button className='lg:hidden p-5 rounded-md outline-none text-lg' onClick={()=> setOpenNav(!openNav)}>
             {
                 openNav ? (
                     <i className="fa fa-times"></i>

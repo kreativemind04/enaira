@@ -3,12 +3,12 @@ const Agents = () => {
     return ( 
         <div className="agents">
             <h2 className="font-bold text-2xl text-center my-3">Become an eNaira Agent</h2>
-            <div className="flex flex-col md:flex-row">
-                <div className='md:w-1/2 md:p-20 h-auto'>
+            <div className="flex flex-col lg:flex-row">
+                <div className='lg:w-1/2 lg:p-20 h-auto'>
                     <img src={bullnet} alt="" />
                 </div>
                
-                <div className='px-12 md:px-0 pt-20'>
+                <div className='px-12 lg:px-0 pt-20 text-lg '>
                     <h3 className="font-bold pb-5">Looking for how to make extra cash without stress?</h3>
                     <h4>As an eNaira agent, you will;</h4>
                     <p><i className="fa fa-check-square pr-2" ></i>Earn passive income while you focus on your career</p>

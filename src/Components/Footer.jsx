@@ -8,7 +8,7 @@ const Footer = () => {
         handleSubmit,
     } = useForm({})
 
-    return ( <div className=" footer flex flex-col md:flex-row justify-between bg-gray-600 p-5 text-white">
+    return ( <div className=" footer flex flex-col lg:flex-row justify-between bg-gray-600 p-5 text-white">
         <div>
             <div className='bg-white mt-10'>
                 <img src={logo} alt="" />

@@ -9,7 +9,7 @@ const Download = () => {
             <a className="border border-green-600 rounded-md bg-green-600 text-white text-sm px-4 py-4" href="https://speed.page.link/vAS1">Download on Apple Store</a>
             </div>
         </div>
-        <div className=" hidden md:block h-96 w-1/4">
+        <div className=" hidden lg:block h-96 w-1/4">
             <img src={iphone} alt="" />
         </div>
     </div> );
