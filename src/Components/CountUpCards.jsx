@@ -6,31 +6,29 @@ const CountUpCards = ({title, end}) => {
     const [count, setCount] = useState(null)
 
     const ref = useRef(0)
-
-    const counting = end / 200
-
-    const updateCount = () => {
-        if(ref.current < end ) {
-            const result = Math.ceil(ref.current + counting)
-            if(result > end) return setCount(end)
-            setCount(result)
-            ref.current = result
+    
+    useEffect(()=>{
+        const counting = end / 200
+        const updateCount = () =>{
+            if(ref.current < end) {
+                const result = Math.ceil(ref.current + counting)
+                if(result > end) return setCount(end)
+                setCount(result)
+                ref.current = result
+            }
+            setTimeout(updateCount, 50)
         }
-        setTimeout(updateCount, 50)
-    }
-
-    useEffect( () => {
         let isCounted = true
-        if(isCounted) {
+        if(isCounted){
             updateCount()
         }
-        return () => {
+        return() =>{
             isCounted = false
         }
     }, [end])
 
     return ( <div>
-        <h1>{count}</h1>
+        {count && <h1>{count}</h1>}
         <p>{title}</p>
     </div> );
 }
